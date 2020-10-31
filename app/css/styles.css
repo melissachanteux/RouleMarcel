@@ -80,15 +80,16 @@ a:hover {
     height: 100vh;
     background: white;
     text-align: right; }
-    .container-diapo .section-right .content-button .button-primary {
+    .container-diapo .section-right .content-button .button-primary-roulemarcel {
       background: #FFF000;
       padding: 20px;
+      border: none;
       cursor: pointer; }
-      .container-diapo .section-right .content-button .button-primary p {
+      .container-diapo .section-right .content-button .button-primary-roulemarcel p {
         margin-bottom: 0;
         text-transform: uppercase;
         font-weight: bold; }
-      .container-diapo .section-right .content-button .button-primary i {
+      .container-diapo .section-right .content-button .button-primary-roulemarcel i {
         margin-right: 10px; }
   .container-diapo .mask-img-square {
     height: 600px; }
@@ -147,3 +148,45 @@ a:hover {
       right: calc(50% - 60px);
       background: black;
       color: white; }
+  .container-diapo .modal.modal-roulemarcel {
+    top: 35%; }
+    .container-diapo .modal.modal-roulemarcel .modal-dialog {
+      position: relative; }
+    .container-diapo .modal.modal-roulemarcel .modal-content {
+      border-radius: 0;
+      border: none;
+      position: relative; }
+    .container-diapo .modal.modal-roulemarcel .modal-body {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center; }
+      .container-diapo .modal.modal-roulemarcel .modal-body .icon-check-circle {
+        border: 2px solid black;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px; }
+        .container-diapo .modal.modal-roulemarcel .modal-body .icon-check-circle i {
+          font-size: 25px; }
+      .container-diapo .modal.modal-roulemarcel .modal-body h2 {
+        font-weight: bold;
+        margin-bottom: 20px; }
+    .container-diapo .modal.modal-roulemarcel .content-button-close {
+      position: absolute;
+      top: -32px;
+      right: 0; }
+      .container-diapo .modal.modal-roulemarcel .content-button-close .button-close-roulemarcel.close {
+        background-color: #FFF000;
+        border: none;
+        opacity: 1;
+        padding: 10px 20px; }
+        .container-diapo .modal.modal-roulemarcel .content-button-close .button-close-roulemarcel.close p {
+          margin-bottom: 0;
+          text-transform: uppercase;
+          color: black;
+          font-size: 12px;
+          letter-spacing: 2px; }

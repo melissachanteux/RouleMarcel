@@ -26,6 +26,6 @@
     "minimatch": "^3.0.2"
   },
   "dependencies": {
-    "foundation-sites": "^6.5.0-rc.2"
+    "foundation-sites": "^6.6.3"
   }
 }
