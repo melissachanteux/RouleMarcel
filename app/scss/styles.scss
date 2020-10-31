@@ -1,3 +1,5 @@
+@import "partials/variables.scss";
+
 // * ----------------------- * //
 // --------- COMMUN ---------- //
 // * ----------------------- * //
@@ -11,7 +13,7 @@ body{
   // user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
+  font-family: $fontfamily;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -20,7 +22,7 @@ body{
 }
 
 p, a, li{
-  font-family: 'Poppins', sans-serif;
+  font-family: $fontfamily;
 }
 
 .flex{
@@ -79,7 +81,7 @@ a:hover{
 }
 
 .color-grey{
-  color: #404040;
+  color: $grey;
 }
 // * ----------------------- * //
 .container-diapo{
@@ -112,7 +114,7 @@ a:hover{
     text-align: right;
     .content-button{
       .button-primary-roulemarcel{
-        background: #FFF000;
+        background: $yellow;
         padding: 20px;
         border: none;
         cursor: pointer;
@@ -153,7 +155,7 @@ a:hover{
 
       .info-color-shape{
         margin-top: 30px;
-        background: #FFF000;
+        background: $yellow;
         padding: 30px;
         width: 550px;
         height: 390px;
@@ -246,7 +248,7 @@ a:hover{
       top: -32px;
       right: 0;
       .button-close-roulemarcel.close{
-        background-color: #FFF000;
+        background-color: $yellow;
         border: none;
         opacity: 1;
         padding: 10px 20px;
