@@ -77,6 +77,10 @@ a:hover{
 .width50{
   width: 50%;
 }
+
+.color-grey{
+  color: #404040;
+}
 // * ----------------------- * //
 .container-diapo{
   display: flex;
@@ -96,6 +100,7 @@ a:hover{
         text-transform: uppercase;
         text-align: center;
         transform: rotate(270deg);
+        font-size: 20px;
       }
     }
   }
@@ -112,13 +117,18 @@ a:hover{
         cursor: pointer;
         p{
           margin-bottom: 0;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+        i{
+          margin-right: 10px;
         }
       }
     }
   }
 
   .mask-img-square{
-    width: 600px;
+    // width: 600px;
     height: 600px;
   }
 
@@ -132,6 +142,7 @@ a:hover{
         h1{
           font-weight: bold;
           margin-bottom: 0;
+          font-size: 54px;
         }
         p.p-italic{
           font-style: italic;
@@ -143,6 +154,8 @@ a:hover{
         margin-top: 30px;
         background: #FFF000;
         padding: 30px;
+        width: 550px;
+        height: 390px;
         .p-subtitle{
           font-weight: bold;
           text-transform: uppercase;
@@ -171,20 +184,25 @@ a:hover{
         }
       }
     }
-    .arrow-generic{
-      width: 60px;
-      height: 60px;
-    }
     .swiper-container{
-      margin: 0;
-    }
-    .swiper-button-prev.arrow-style-left{
+      .arrow-generic{
+        width: 60px;
+        height: 60px;
+        top: calc(100% - 37px);
+      }
+      .swiper-container{
+        margin: 0;
+      }
+      .swiper-button-prev.arrow-style-left{
+        left: calc(50% - 60px);
         background: white;
         color: black;
+        }
+      .swiper-button-next.arrow-style-right{
+        right: calc(50% - 60px);
+        background: black;
+        color: white;
       }
-    .swiper-button-next.arrow-style-right{
-      background: black;
-      color: white;
     }
   }
 }

@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Graphiste | WebDesigner">
     <link rel="stylesheet" href="fontawesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="app/css/foundation.min.css">
     <link rel="stylesheet" href="app/css/styles.css">
@@ -42,29 +41,60 @@
       <!-- test swiper -->
       <div class="swiper-container">
         <div class="swiper-wrapper">
-          <div class="mask-img-square swiper-slide">
-            <img class="img-fluid img-melissa" src="img/melissa-couleur-min.jpg" alt="Melissa">
+          <div class="swiper-slide flex">
+            <div class="mask-img-square width50">
+              <img class="img-fluid img-melissa" src="img/melissa-couleur-min.jpg" alt="Melissa">
+            </div>
+            <div class="content-info width50">
+              <div class="content-profil">
+                <h1>Mélissa Chanteux</h1>
+                <p class="p-italic">pour <span class="color-grey">roulemarcel</span></p>
+              </div>
+              <div class="info-color-shape">
+                <p class="p-subtitle">Présentation</p>
+                <hr class="mini-hr"/>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <div class="content-link-a">
+                  <a href="http://melissachanteux.com" target="_blank" class="button-link" title="Book Mélissa Chanteux">Voir le book en ligne</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide flex">
+            <div class="mask-img-square width50">
+              <img class="img-fluid img-melissa" src="img/melissa-couleur-min.jpg" alt="Melissa">
+            </div>
+            <div class="content-info width50">
+              <div class="content-profil">
+                <h1>Mélissa Chanteux</h1>
+                <p class="p-italic">pour <span class="color-grey">roulemarcel</span></p>
+              </div>
+              <div class="info-color-shape">
+                <p class="p-subtitle">Présentation</p>
+                <hr class="mini-hr"/>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                <div class="content-link-a">
+                  <a href="http://melissachanteux.com" target="_blank" class="button-link" title="Book Mélissa Chanteux">Voir le book en ligne</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="swiper-button-prev arrow-style-left arrow-generic"></div>
         <div class="swiper-button-next arrow-style-right arrow-generic"></div>
       </div>
-      <div class="content-info width50">
-        <div class="content-profil">
-          <h1>Mélissa Chanteux</h1>
-          <p class="p-italic">pour roulemarcel</p>
-        </div>
-        <div class="info-color-shape">
-          <p class="p-subtitle">Présentation</p>
-          <hr class="mini-hr"/>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <div class="content-link-a">
-            <a href="http://melissachanteux.com" target="_blank" class="button-link" title="Book Mélissa Chanteux">Voir le book en ligne</a>
-          </div>
-        </div>
-      </div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
   </body>
 </html>

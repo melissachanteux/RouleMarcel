@@ -54,6 +54,9 @@ a:hover {
 .width50 {
   width: 50%; }
 
+.color-grey {
+  color: #404040; }
+
 .container-diapo {
   display: flex;
   width: 100%;
@@ -70,7 +73,8 @@ a:hover {
         color: white;
         text-transform: uppercase;
         text-align: center;
-        transform: rotate(270deg); }
+        transform: rotate(270deg);
+        font-size: 20px; }
   .container-diapo .section-right {
     width: 70%;
     height: 100vh;
@@ -81,9 +85,12 @@ a:hover {
       padding: 20px;
       cursor: pointer; }
       .container-diapo .section-right .content-button .button-primary p {
-        margin-bottom: 0; }
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-weight: bold; }
+      .container-diapo .section-right .content-button .button-primary i {
+        margin-right: 10px; }
   .container-diapo .mask-img-square {
-    width: 600px;
     height: 600px; }
   .container-diapo .content-description {
     width: 80%;
@@ -94,14 +101,17 @@ a:hover {
         padding: 20px 0px 0px 30px; }
         .container-diapo .content-description .content-info .content-profil h1 {
           font-weight: bold;
-          margin-bottom: 0; }
+          margin-bottom: 0;
+          font-size: 54px; }
         .container-diapo .content-description .content-info .content-profil p.p-italic {
           font-style: italic;
           text-transform: uppercase; }
       .container-diapo .content-description .content-info .info-color-shape {
         margin-top: 30px;
         background: #FFF000;
-        padding: 30px; }
+        padding: 30px;
+        width: 550px;
+        height: 390px; }
         .container-diapo .content-description .content-info .info-color-shape .p-subtitle {
           font-weight: bold;
           text-transform: uppercase;
@@ -123,14 +133,17 @@ a:hover {
             color: white;
             text-transform: uppercase;
             font-weight: bold; }
-    .container-diapo .content-description .arrow-generic {
+    .container-diapo .content-description .swiper-container .arrow-generic {
       width: 60px;
-      height: 60px; }
-    .container-diapo .content-description .swiper-container {
+      height: 60px;
+      top: calc(100% - 37px); }
+    .container-diapo .content-description .swiper-container .swiper-container {
       margin: 0; }
-    .container-diapo .content-description .swiper-button-prev.arrow-style-left {
+    .container-diapo .content-description .swiper-container .swiper-button-prev.arrow-style-left {
+      left: calc(50% - 60px);
       background: white;
       color: black; }
-    .container-diapo .content-description .swiper-button-next.arrow-style-right {
+    .container-diapo .content-description .swiper-container .swiper-button-next.arrow-style-right {
+      right: calc(50% - 60px);
       background: black;
       color: white; }
